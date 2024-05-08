@@ -19,6 +19,8 @@ import { Pages } from '@/collections/Pages'
 import { Users } from '@/collections/Users'
 import Icon from '@/components/payload-icons/Icon'
 import Logo from '@/components/payload-icons/Logo'
+import { Footer } from '@/globals/Footer'
+import { Header } from '@/globals/Header'
 import {
   generateDescription,
   generateImage,
@@ -77,6 +79,7 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, Blogs, Pages],
+  globals: [Header, Footer],
   plugins: [
     s3Storage({
       collections: {
