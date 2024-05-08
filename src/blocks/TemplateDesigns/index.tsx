@@ -1,8 +1,8 @@
-import template1 from '/public/images/template/template-1.png'
-import template2 from '/public/images/template/template-2.png'
-import template3 from '/public/images/template/template-3.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import template1 from 'public/images/template/template-1.png'
+import template2 from 'public/images/template/template-2.png'
+import template3 from 'public/images/template/template-3.png'
 
 function TemplateDesigns() {
   const templates = [
