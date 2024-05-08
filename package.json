@@ -34,13 +34,16 @@
     "@trpc/next": "next",
     "@trpc/react-query": "next",
     "@trpc/server": "next",
+    "@types/react-modal-video": "^1.2.3",
     "cross-env": "^7.0.3",
     "next": "14.3.0-canary.28",
     "payload": "^3.0.0-beta.25",
     "prettier": "^3.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal-video": "^2.0.1",
     "sharp": "^0.32.6",
+    "swiper": "^11.1.1",
     "zod": "^3.23.4"
   },
   "devDependencies": {
