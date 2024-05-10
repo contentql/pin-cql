@@ -15,7 +15,10 @@ export interface Config {
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
-  globals: {};
+  globals: {
+    header: Header;
+    footer: Footer;
+  };
   locale: null;
   user: User & {
     collection: 'users';
@@ -123,6 +126,182 @@ export interface Page {
             blockName?: string | null;
             blockType: 'page1';
           }
+        | {
+            title: string;
+            sub_title: string;
+            button_text: string;
+            description: string;
+            background_image: string | Media;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'hero15';
+          }
+        | {
+            title: string;
+            sub_title: string;
+            features?:
+              | {
+                  title: string;
+                  sub_title: string;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'features6_1';
+          }
+        | {
+            title: string;
+            sub_title: string;
+            heading1: string;
+            description1: string;
+            light_theme_image1: string | Media;
+            dark_theme_image1: string | Media;
+            heading2: string;
+            description2: string;
+            light_theme_image2: string | Media;
+            dark_theme_image2: string | Media;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'features5_1';
+          }
+        | {
+            statistics: {
+              integer: number;
+              character: string;
+              description: string;
+              id?: string | null;
+            }[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'statistic1_1';
+          }
+        | {
+            title: string;
+            subtitle: string;
+            heading: string;
+            points: {
+              point: string;
+              id?: string | null;
+            }[];
+            button_text: string;
+            background_image: string | Media;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'lnk2_1';
+          }
+        | {
+            title: string;
+            sub_title: string;
+            background_image: string | Media;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'lnk3_1';
+          }
+        | {
+            title: string;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'brands1_1';
+          }
+        | {
+            title: string;
+            sub_title: string;
+            features: {
+              title: string;
+              description: string;
+              feature_image_light: string | Media;
+              feature_image_dark: string | Media;
+              id?: string | null;
+            }[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'features2_1';
+          }
+        | {
+            features: {
+              s_no: number;
+              title: string;
+              description: string;
+              id?: string | null;
+            }[];
+            background_image: string | Media;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'ct02_2';
+          }
+        | {
+            link1: string;
+            link2: string;
+            button_text: string;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'templateDesigns';
+          }
+        | {
+            title: string;
+            sub_title: string;
+            reviews: {
+              review: string;
+              name: string;
+              designation: string;
+              reviewer_image: string | Media;
+              id?: string | null;
+            }[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'reviews1_1';
+          }
+        | {
+            title: string;
+            ratings: {
+              light_theme_image: string | Media;
+              dark_theme_image: string | Media;
+              rating: number;
+              rating_out_of: number;
+              id?: string | null;
+            }[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'rating1_1';
+          }
+        | {
+            title: string;
+            subtitle: string;
+            integrations: {
+              title: string;
+              integration_image: string | Media;
+              id?: string | null;
+            }[];
+            button_text: string;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'integrations2_1';
+          }
+        | {
+            title: string;
+            sub_title: string;
+            questions: {
+              question: string;
+              answer_paragraphs: {
+                answer: string;
+                id?: string | null;
+              }[];
+              id?: string | null;
+            }[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'faqs3_1';
+          }
+        | {
+            title: string;
+            sub_title: string;
+            button_text: string;
+            background_image: string | Media;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'banner13_1';
+          }
       )[]
     | null;
   updatedAt: string;
@@ -162,6 +341,70 @@ export interface PayloadMigration {
   batch?: number | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "header".
+ */
+export interface Header {
+  id: string;
+  logo_pink: string | Media;
+  logo_pink_white: string | Media;
+  logo_white: string | Media;
+  product_links: {
+    title: string;
+    description: string;
+    path: string;
+    id?: string | null;
+  }[];
+  explore_path: string;
+  resources1_links: {
+    title: string;
+    description: string;
+    path: string;
+    id?: string | null;
+  }[];
+  resources2_links: {
+    title: string;
+    description: string;
+    path: string;
+    id?: string | null;
+  }[];
+  templates_path: string;
+  pricing_path: string;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "footer".
+ */
+export interface Footer {
+  id: string;
+  logo_pink: string | Media;
+  logo_pink_white: string | Media;
+  footer_title1: string;
+  title1_links: {
+    footer_name: string;
+    footer_path: string;
+    id?: string | null;
+  }[];
+  footer_title2: string;
+  title2_links: {
+    footer_name: string;
+    footer_path: string;
+    id?: string | null;
+  }[];
+  footer_title3: string;
+  title3_links: {
+    footer_name: string;
+    footer_path: string;
+    id?: string | null;
+  }[];
+  newsletter_title: string;
+  copyright_description: string;
+  updatedAt?: string | null;
+  createdAt?: string | null;
 }
 
 
