@@ -1,4 +1,3 @@
-import Layout from '../_components/layout/Layout'
 import '/public/css/animate.css'
 import '/public/css/bootstrap.min.css'
 import '/public/css/demo.css'
@@ -17,7 +16,7 @@ import 'swiper/css/pagination'
 // import "/public/css/owl.carousel.min.css"
 // import "/public/css/owl.theme.default.min.css"
 // import SmoothScroll from "../components/elements/SmoothScroll"
-import { getPayloadClient } from '@/get-payload'
+import { serverClient } from '@/trpc/serverClient'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -29,20 +28,20 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const payload = await getPayloadClient()
-  const headerData = await payload.findGlobal({ slug: 'header' })
-  const footerData = await payload.findGlobal({ slug: 'footer' })
+  const headerData = await serverClient.global.getHeader()
+  const footerData = await serverClient.global.getFooter()
+
   return (
     <html lang='en'>
       <body>
-        <Layout
+        {/* <Layout
           headerStyle={1}
           footerStyle={3}
           headerCls='navbar-dark inner-page-header'
           headerData={headerData}
-          footerData={footerData}>
-          {children}
-        </Layout>
+          footerData={footerData}> */}
+        {children}
+        {/* </Layout> */}
       </body>
     </html>
   )

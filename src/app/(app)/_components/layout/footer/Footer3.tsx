@@ -1,7 +1,6 @@
+import { Footer, Media } from '@payload-types'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import { Footer, Media } from '@/payload-types'
 
 interface Props {
   footerData?: Footer

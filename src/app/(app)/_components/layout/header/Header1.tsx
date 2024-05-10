@@ -1,9 +1,8 @@
 import Menu from '../Menu'
 import MobileMenu from '../MobileMenu'
+import { Header, Media } from '@payload-types'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import { Header, Media } from '@/payload-types'
 
 interface Props {
   scroll: boolean

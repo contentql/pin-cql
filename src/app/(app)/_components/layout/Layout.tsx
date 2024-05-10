@@ -1,9 +1,9 @@
 'use client'
 
-import BackToTop from '../elements/BackToTop'
+import { Footer, Header } from '@payload-types'
 import { useEffect, useState } from 'react'
 
-import { Footer, Header } from '@/payload-types'
+import BackToTop from '@/app/(app)/_components/elements/BackToTop'
 
 import Breadcrumb from './Breadcrumb'
 import PageHead from './PageHead'
@@ -53,7 +53,7 @@ export default function Layout({
 
   useEffect(() => {
     const WOW = require('wowjs')
-
+    console.log('WOW loaded', WOW)
     // Initialize WOW.js for desktop
     window.wowDesktop = new WOW.WOW({
       boxClass: 'wow',
