@@ -7,6 +7,8 @@ import { About_3_Block } from './About_3/block'
 import Banner3_6 from './Banner3_6'
 import Banner13_1 from './Banner13_1'
 import { Banner13_1_Block } from './Banner13_1/block'
+import Banner13_3 from './Banner13_3'
+import { Banner13_3_Block } from './Banner13_3/block'
 import Blog1_6 from './Blog1_6'
 import { Blog1_6_Block } from './Blog1_6/block'
 import BoxContent from './BoxContent'
@@ -19,6 +21,8 @@ import Brands1_22 from './Brands1_22'
 import { Brands1_22_Block } from './Brands1_22/block'
 import Cookies from './Cookies'
 import { Cookies_Block } from './Cookies/block'
+import Ct01_12 from './Ct01_12'
+import { Ct01_12_Block } from './Ct01_12/block'
 import Ct01_28 from './Ct01_28'
 import { Ct01_28_Block } from './Ct01_28/block'
 import Ct01_36 from './Ct01_36'
@@ -27,18 +31,28 @@ import Ct01_37 from './Ct01_37'
 import { Ct01_37_Block } from './Ct01_37/block'
 import Ct02_2 from './Ct02_2'
 import { Ct02_2_Block } from './Ct02_2/block'
+import Ct02_19 from './Ct02_19'
+import { Ct02_19_Block } from './Ct02_19/block'
+import Ct02_20 from './Ct02_20'
+import { Ct02_20_Block } from './Ct02_20/block'
+import Ct02_21 from './Ct02_21'
+import { Ct02_21_Block } from './Ct02_21/block'
 import Ct02_44 from './Ct02_44'
 import { Ct02_44_Block } from './Ct02_44/block'
 import Ct02_45 from './Ct02_45'
 import { Ct02_45_Block } from './Ct02_45/block'
 import Ct02_51 from './Ct02_51'
 import { Ct02_51_Block } from './Ct02_51/block'
+import Ct03_4 from './Ct03_4'
+import { Ct03_4_Block } from './Ct03_4/block'
 import Ct04_16 from './Ct04_16'
 import { Ct04_16_Block } from './Ct04_16/block'
 import Faqs3_1 from './Faqs3_1'
 import { Faqs3_1_Block } from './Faqs3_1/block'
 import Features2_1 from './Features2_1'
 import { Features2_1_Block } from './Features2_1/block'
+import Features2_9 from './Features2_9'
+import { Features2_9_Block } from './Features2_9/block'
 import Features2_21 from './Features2_21'
 import { Features2_21_Block } from './Features2_21/block'
 import Features5_1 from './Features5_1'
@@ -49,18 +63,26 @@ import Features11_10 from './Features11_10'
 import { Features11_10_Block } from './Features11_10/block'
 import Features11_14 from './Features11_14'
 import { Features11_14_Block } from './Features11_14/block'
+import Features11_15 from './Features11_15'
+import { Features11_15_Block } from './Features11_15/block'
+import Features12_5 from './Features12_5'
+import { Features12_5_Block } from './Features12_5/block'
 import Features12_10 from './Features12_10'
 import { Features12_10_Block } from './Features12_10/block'
 import Features12_11 from './Features12_11'
 import { Features12_11_Block } from './Features12_11/block'
 import Hero5 from './Hero5'
 import { Hero5_Block } from './Hero5/block'
+import Hero10 from './Hero10'
+import { Hero10_Block } from './Hero10/block'
 import Hero27 from './Hero27'
 import { Hero27_Block } from './Hero27/block'
 import Hero15 from './Hero_15'
 import { Hero15_Block } from './Hero_15/block'
 import Integrations2_1 from './Integrations2_1'
 import { Integrations2_1_Block } from './Integrations2_1/block'
+import Lnk1_10 from './Lnk1_10'
+import { Lnk1_10_Block } from './Lnk1_10/block'
 import Lnk1_23 from './Lnk1_23'
 import { Lnk1_23_Block } from './Lnk1_23/block'
 import Lnk1_25 from './Lnk1_25'
@@ -74,6 +96,8 @@ import Lnk2_26 from './Lnk2_26'
 import { Lnk2_26_Block } from './Lnk2_26/block'
 import Lnk3_1 from './Lnk3_1'
 import { Lnk3_1_Block } from './Lnk3_1/block'
+import Newsletter1_2 from './Newsletter1_2'
+import { Newsletter1_2_Block } from './Newsletter1_2/block'
 import Newsletter1_6 from './Newsletter1_6'
 import { Newsletter1_6_Block } from './Newsletter1_6/block'
 import Page1 from './Page1'
@@ -86,6 +110,8 @@ import Rating1_11 from './Rating1_11'
 import { Rating1_11_block } from './Rating1_11/block'
 import Reviews1_1 from './Reviews1_1'
 import { Reviews1_1_Block } from './Reviews1_1/block'
+import Reviews1_6 from './Reviews1_6'
+import { Reviews1_6_Block } from './Reviews1_6/block'
 import Reviews1_13 from './Reviews1_13'
 import { Reviews1_13_Block } from './Reviews1_13/block'
 import Reviews2_7 from './Reviews2_7'
@@ -94,6 +120,8 @@ import Reviews2_8 from './Reviews2_8'
 import { Reviews2_8_Block } from './Reviews2_8/block'
 import Statistic1_1 from './Statistic1_1'
 import { Statistic1_1_Block } from './Statistic1_1/block'
+import Statistic1_10 from './Statistic1_10'
+import { Statistic1_10_Block } from './Statistic1_10/block'
 import Statistic1_19 from './Statistic1_19'
 import { Statistic1_19_Block } from './Statistic1_19/block'
 import Statistic5_4 from './Statistic5_4'
@@ -166,6 +194,20 @@ export const blocksJSX = {
   ct04_16: Ct04_16,
   ct02_45: Ct02_45,
   reviews2_8: Reviews2_8,
+  hero10: Hero10,
+  features11_15: Features11_15,
+  lnk1_10: Lnk1_10,
+  ct02_19: Ct02_19,
+  statistic1_10: Statistic1_10,
+  features2_9: Features2_9,
+  ct02_20: Ct02_20,
+  ct02_21: Ct02_21,
+  features12_5: Features12_5,
+  ct01_12: Ct01_12,
+  ct03_4: Ct03_4,
+  reviews1_6: Reviews1_6,
+  banner13_3: Banner13_3,
+  newsletter1_2: Newsletter1_2,
 }
 
 export type SlugType = keyof typeof blocksJSX
@@ -227,4 +269,18 @@ export const blocks = {
   Ct04_16: Ct04_16_Block,
   Ct02_45: Ct02_45_Block,
   Reviews2_8: Reviews2_8_Block,
+  Hero10: Hero10_Block,
+  Features11_15: Features11_15_Block,
+  Lnk1_10: Lnk1_10_Block,
+  Ct02_19: Ct02_19_Block,
+  Statistic1_10: Statistic1_10_Block,
+  Features2_9: Features2_9_Block,
+  Ct02_20: Ct02_20_Block,
+  Ct02_21: Ct02_21_Block,
+  Features12_5: Features12_5_Block,
+  Ct01_12: Ct01_12_Block,
+  Ct03_4: Ct03_4_Block,
+  Reviews1_6: Reviews1_6_Block,
+  Banner13_3: Banner13_3_Block,
+  Newsletter1_2: Newsletter1_2_Block,
 }
