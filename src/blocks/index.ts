@@ -169,6 +169,8 @@ import Features5_4 from './Features5_4'
 import { Features5_4_Block } from './Features5_4/block'
 import Features13_1 from './Features13_1'
 import { Features13_1_Block } from './Features13_1/block'
+import Hero13 from './Hero13'
+import { Hero13_Block } from './Hero13/block'
 import Hero23 from './Hero23'
 import { Hero23_Block } from './Hero23/block'
 import Hero28 from './Hero28'
@@ -191,6 +193,10 @@ import PricingTitle from './PricingTitle'
 import { PricingTitle_Block } from './PricingTitle/block'
 import Statistic1_5 from './Statistic1_5'
 import { Statistic1_5_Block } from './Statistic1_5/block'
+import Statistic5_3 from './Statistic5_3'
+import { Statistic5_3_Block } from './Statistic5_3/block'
+import Terms from './Terms'
+import { Terms_Block } from './Terms/block'
 
 export const blocksJSX = {
   Test1_1: Test1_1,
@@ -290,6 +296,9 @@ export const blocksJSX = {
   pricingPlans: PricingPlans,
   pricingFaqs: PricingFaqs,
   pricingBanner: PricingBanner,
+  terms: Terms,
+  hero13: Hero13,
+  statistic5_3: Statistic5_3,
 }
 
 export type SlugType = keyof typeof blocksJSX
@@ -392,4 +401,7 @@ export const blocks = {
   PricingPlans: PricingPlans_Block,
   PricingFaqs: PricingFaqs_Block,
   PricingBanner: PricingBanner_Block,
+  Terms: Terms_Block,
+  Hero13: Hero13_Block,
+  statistic5_3: Statistic5_3_Block,
 }
