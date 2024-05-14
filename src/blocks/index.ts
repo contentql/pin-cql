@@ -155,6 +155,43 @@ import { TextContent_1_Block } from '@/blocks/TextContent_1/block'
 import TextContent_2 from '@/blocks/TextContent_2'
 import { TextContent_2_block } from '@/blocks/TextContent_2/block'
 
+import Banner14_1 from './Banner14_1'
+import { Banner14_1_Block } from './Banner14_1/block'
+import Ct01_7 from './Ct01_7'
+import { Ct01_7_Block } from './Ct01_7/block'
+import Ct01_8 from './Ct01_8'
+import { Ct01_8_Block } from './Ct01_8/block'
+import Ct05_1 from './Ct05_1'
+import { Ct05_1_Block } from './Ct05_1/block'
+import Features2_5 from './Features2_5'
+import { Features2_5_Block } from './Features2_5/block'
+import Features5_4 from './Features5_4'
+import { Features5_4_Block } from './Features5_4/block'
+import Features13_1 from './Features13_1'
+import { Features13_1_Block } from './Features13_1/block'
+import Hero23 from './Hero23'
+import { Hero23_Block } from './Hero23/block'
+import Hero28 from './Hero28'
+import { Hero28_Block } from './Hero28/block'
+import Integrations1_8 from './Integrations1_8'
+import { Integrations1_8_Block } from './Integrations1_8/block'
+import Lnk1_5 from './Lnk1_5'
+import { Lnk1_5_Block } from './Lnk1_5/block'
+import PricingBanner from './PricingBanner'
+import { PricingBanner_Block } from './PricingBanner/block'
+import PricingBrands from './PricingBrands'
+import { PricingBrands_Block } from './PricingBrands/block'
+import PricingFaqs from './PricingFaqs'
+import { PricingFaqs_Block } from './PricingFaqs/block'
+import PricingPlans from './PricingPlans'
+import { PricingPlans_Block } from './PricingPlans/block'
+import PricingTables from './PricingTables'
+import { PricingTables_Block } from './PricingTables/block'
+import PricingTitle from './PricingTitle'
+import { PricingTitle_Block } from './PricingTitle/block'
+import Statistic1_5 from './Statistic1_5'
+import { Statistic1_5_Block } from './Statistic1_5/block'
+
 export const blocksJSX = {
   Test1_1: Test1_1,
   Page1: Page1,
@@ -235,6 +272,24 @@ export const blocksJSX = {
   templatePlain: TemplatePlain,
   helpCenterFaqs: HelpCenterFaqs,
   helpCenterBanner: HelpCenterBanner,
+  hero28: Hero28,
+  ct05_1: Ct05_1,
+  integrations1_8: Integrations1_8,
+  banner14_1: Banner14_1,
+  hero23: Hero23,
+  statistic1_5: Statistic1_5,
+  lnk1_5: Lnk1_5,
+  features2_5: Features2_5,
+  ct01_7: Ct01_7,
+  ct01_8: Ct01_8,
+  features13_1: Features13_1,
+  features5_4: Features5_4,
+  pricingTitle: PricingTitle,
+  pricingTables: PricingTables,
+  pricingBrands: PricingBrands,
+  pricingPlans: PricingPlans,
+  pricingFaqs: PricingFaqs,
+  pricingBanner: PricingBanner,
 }
 
 export type SlugType = keyof typeof blocksJSX
@@ -319,4 +374,22 @@ export const blocks = {
   TemplatePlain: TemplatePlain_Block,
   HelpCenterFaqs: HelpCenterFaqs_Block,
   HelpCenterBanner: HelpCenterBanner_Block,
+  Hero28: Hero28_Block,
+  Ct05_1: Ct05_1_Block,
+  Integrations1_8: Integrations1_8_Block,
+  Banner14_1: Banner14_1_Block,
+  Hero23: Hero23_Block,
+  Statistic1_5: Statistic1_5_Block,
+  Lnk1_5: Lnk1_5_Block,
+  Features2_5: Features2_5_Block,
+  Ct01_7: Ct01_7_Block,
+  Ct01_8: Ct01_8_Block,
+  Features13_1: Features13_1_Block,
+  Features5_4: Features5_4_Block,
+  PricingTitle: PricingTitle_Block,
+  PricingTables: PricingTables_Block,
+  PricingBrands: PricingBrands_Block,
+  PricingPlans: PricingPlans_Block,
+  PricingFaqs: PricingFaqs_Block,
+  PricingBanner: PricingBanner_Block,
 }
